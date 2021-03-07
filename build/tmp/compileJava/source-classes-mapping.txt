@@ -6,3 +6,5 @@ xyz/d1snin/vkbot/commands/AnimeCommand.java
  xyz.d1snin.vkbot.commands.AnimeCommand
 xyz/d1snin/vkbot/App.java
  xyz.d1snin.vkbot.App
+xyz/d1snin/vkbot/util/ReadFromJSON.java
+ xyz.d1snin.vkbot.util.ReadFromJSON

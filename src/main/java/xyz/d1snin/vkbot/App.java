@@ -2,9 +2,12 @@ package xyz.d1snin.vkbot;
 import xyz.d1snin.vkbot.commands.*;
 
 import ru.codeoff.bots.sdk.clients.Group;
+import xyz.d1snin.vkbot.util.ReadFromJSON;
+
+import java.util.Objects;
 
 public class App {
-    public static Group group = new Group(203098891, "de3743946f15c376400a2613e783faf57d1828e35d550850d2e0719dc9479663de799e216efc54633f3bf");
+    public static Group group = new Group(Integer.parseInt(Objects.requireNonNull(ReadFromJSON.readJson("conf.json", "group-id"))), ReadFromJSON.readJson("conf.json", "token"));
     public static void main(String[] args) {
         new TestCommand();
         new AnimeCommand();

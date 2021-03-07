@@ -23,6 +23,7 @@ repositories {
 
 dependencies {
     implementation 'com.github.healexxzt:vk-bot-keyboard:1.1.2'
+    compile 'com.googlecode.json-simple:json-simple:1.1.1'
 }
 sourceSets {
     main.java.srcDir "src/main/java"
