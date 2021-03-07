@@ -19,10 +19,12 @@ version '1.0.0'
 repositories {
     mavenCentral()
     jcenter()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
     implementation 'com.github.healexxzt:vk-bot-keyboard:1.1.2'
+    implementation 'com.github.sg4e:java-danbooru-wrapper:master-SNAPSHOT'
     compile 'com.googlecode.json-simple:json-simple:1.1.1'
 }
 sourceSets {
