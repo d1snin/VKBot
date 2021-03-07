@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+apply plugin : 'java'
+
+ext {
+    javaMainClass = 'xyz.d1snin.vkbot.App'
+}
+
+application {
+    mainClassName = javaMainClass
+}
+
+group 'xyz.d1snin.vkbot'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.github.healexxzt:vk-bot-keyboard:1.1.2'
+}
+sourceSets {
+    main.java.srcDir "src/main/java"
+}
+jar {
+    manifest {
+        attributes(
+                'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+                'Main-Class': 'xyz.d1snin.vkbot.App'
+        )
+    }
+}

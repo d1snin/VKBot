@@ -1,0 +1,8 @@
+xyz/d1snin/vkbot/util/AnimeList.java
+ xyz.d1snin.vkbot.util.AnimeList
+xyz/d1snin/vkbot/commands/TestCommand.java
+ xyz.d1snin.vkbot.commands.TestCommand
+xyz/d1snin/vkbot/commands/AnimeCommand.java
+ xyz.d1snin.vkbot.commands.AnimeCommand
+xyz/d1snin/vkbot/App.java
+ xyz.d1snin.vkbot.App
